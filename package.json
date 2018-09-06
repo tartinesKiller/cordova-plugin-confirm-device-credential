@@ -1,0 +1,28 @@
+{
+  "name": "cordova-plugin-confirm-device-credential",
+  "version": "0.1.0",
+  "description": "Confirm user identity",
+  "cordova": {
+    "id": "cordova-plugin-confirm-device-credential",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tartinesKiller/cordova-plugin-confirm-device-credential.git"
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "fingerprint",
+    "credential",
+    "cordova-android"
+  ],
+  "author": "Pijaczynski Damien",
+  "license": "Apache-2",
+  "bugs": {
+    "url": "https://github.com/tartinesKiller/cordova-plugin-confirm-device-credential/issues"
+  },
+  "homepage": "https://github.com/tartinesKiller/cordova-plugin-confirm-device-credential"
+}

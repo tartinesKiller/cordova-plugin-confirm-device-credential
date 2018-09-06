@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.dpi.confirmdevicecredential"
+        version="0.1.0">
+
+  <name>Confirm device credential</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/confirmDeviceCredential.js" target="js/confirmDeviceCredential.js"/>
+
+  <js-module src="www/confirmDeviceCredential.js" name="confirmDeviceCredential">
+    <clobbers target="confirmDeviceCredential" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="ConfirmDeviceCredential">
+        <param name="android-package" value="com.dpi.confirmdevicecredential.ConfirmDeviceCredential"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/ConfirmDeviceCredential.java" target-dir="src/com/dpi/confirmdevicecredential/"/>
+  </platform>
+
+  <!-- <platform name="ios">
+    
+    <config-file target="config.xml" parent="/widget">
+      <feature name="Hello">
+        <param name="ios-package" value="HWPHello" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/HWPHello.h" target-dir="HelloPlugin"/>
+    <source-file src="src/ios/HWPHello.m" target-dir="HelloPlugin"/>
+  </platform>
+
+  <platform name="wp7">
+    <source-file src="src/wp7/Hello.cs"/>
+  </platform> -->
+
+</plugin>
