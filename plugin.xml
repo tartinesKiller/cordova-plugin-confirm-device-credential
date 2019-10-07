@@ -19,7 +19,7 @@
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="ConfirmDeviceCredential">
-        <param name="android-package" value="cordova-plugin-confirm-device-credential"/>
+        <param name="android-package" value="com.dpi.confirmdevicecredential.ConfirmDeviceCredential"/>
       </feature>
     </config-file>
 
